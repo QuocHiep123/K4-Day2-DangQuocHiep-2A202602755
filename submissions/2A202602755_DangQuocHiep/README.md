@@ -2,12 +2,12 @@
 
 **Học viên:** Đặng Quốc Hiệp  
 **Mã số sinh viên:** 2A202602755  
-**Thư mục bài nộp:** `submissions/DangQuocHiep_2A202602755/`  
+**Thư mục bài nộp:** `submissions/2A202602755_DangQuocHiep/`  
 **Điểm tự chấm Phần I (`eval.py grade`):** **20 / 20 điểm**  
 
 ---
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/QuocHiep123/K4-Track4-Day2-Deeplearning-Advance/blob/main/submissions/DangQuocHiep_2A202602755/code/lab_day2.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/QuocHiep123/K4-Track4-Day2-Deeplearning-Advance/blob/main/submissions/2A202602755_DangQuocHiep/code/lab_day2.ipynb)
 
 ---
 
@@ -15,7 +15,7 @@
 
 Bài nộp được đóng gói hoàn chỉnh, chuẩn xác theo hợp đồng của bài Lab:
 ```text
-submissions/DangQuocHiep_2A202602755/
+submissions/2A202602755_DangQuocHiep/
 ├── code/
 │   ├── benchmark.py                   # Đo độ trễ GPU chuẩn hóa (warmup, cuda.synchronize, p50/p95/p99)
 │   ├── dataset.py                     # Nạp dữ liệu, kiểm tra split S1-S4, WeightedRandomSampler, transforms
@@ -51,7 +51,7 @@ submissions/DangQuocHiep_2A202602755/
 
 ### Cách 1: Chạy trực tiếp trên Google Colab / Kaggle
 1. Bấm vào huy hiệu **Open in Colab** ở trên hoặc mở link trực tiếp:
-   [Mở lab_day2.ipynb trên Google Colab](https://colab.research.google.com/github/QuocHiep123/K4-Track4-Day2-Deeplearning-Advance/blob/main/submissions/DangQuocHiep_2A202602755/code/lab_day2.ipynb)
+   [Mở lab_day2.ipynb trên Google Colab](https://colab.research.google.com/github/QuocHiep123/K4-Track4-Day2-Deeplearning-Advance/blob/main/submissions/2A202602755_DangQuocHiep/code/lab_day2.ipynb)
 2. Bật GPU (ví dụ T4 GPU trên Colab hoặc Kaggle).
 3. Chạy lần lượt các ô lệnh từ Bước 0 đến Bước 5.
 
@@ -59,7 +59,7 @@ submissions/DangQuocHiep_2A202602755/
 
 #### Bước 1: Chạy kiểm tra tính đúng đắn của code (Sanity Checks)
 ```bash
-python submissions/DangQuocHiep_2A202602755/code/test_sanity.py
+python submissions/2A202602755_DangQuocHiep/code/test_sanity.py
 ```
 *Kết quả:* Xác nhận Focal Loss $\gamma=0$ tương đương CE ($< 10^{-6}$), chia dữ liệu khớp 100% S1-S4.
 
@@ -67,7 +67,7 @@ python submissions/DangQuocHiep_2A202602755/code/test_sanity.py
 
 1. **Tính chỉ số chi tiết cho cấu hình chung kết `F01`:**
 ```bash
-python eval.py score --pred "submissions/DangQuocHiep_2A202602755/predictions/F01_seed*_test.csv" \
+python eval.py score --pred "submissions/2A202602755_DangQuocHiep/predictions/F01_seed*_test.csv" \
     --test-csv labels/test_subset0.csv --labels labels/labels.csv --tag F01
 ```
 *Kết quả:*
@@ -79,7 +79,7 @@ python eval.py score --pred "submissions/DangQuocHiep_2A202602755/predictions/F0
 
 2. **Tính chỉ số cho mốc baseline `T00`:**
 ```bash
-python eval.py score --pred "submissions/DangQuocHiep_2A202602755/predictions/T00_seed*_test.csv" \
+python eval.py score --pred "submissions/2A202602755_DangQuocHiep/predictions/T00_seed*_test.csv" \
     --test-csv labels/test_subset0.csv --labels labels/labels.csv --tag T00
 ```
 *Kết quả:*
@@ -89,10 +89,10 @@ python eval.py score --pred "submissions/DangQuocHiep_2A202602755/predictions/T0
 3. **Chạy công cụ tự động chấm điểm RUBRIC Mục I:**
 ```bash
 python eval.py grade \
-    --final "submissions/DangQuocHiep_2A202602755/predictions/F01_seed*_test.csv" \
-    --baseline "submissions/DangQuocHiep_2A202602755/predictions/T00_seed*_test.csv" \
-    --uncal "submissions/DangQuocHiep_2A202602755/predictions/F01uncal_seed*_test.csv" \
-    --final-val "submissions/DangQuocHiep_2A202602755/predictions/F01_seed*_val.csv" \
+    --final "submissions/2A202602755_DangQuocHiep/predictions/F01_seed*_test.csv" \
+    --baseline "submissions/2A202602755_DangQuocHiep/predictions/T00_seed*_test.csv" \
+    --uncal "submissions/2A202602755_DangQuocHiep/predictions/F01uncal_seed*_test.csv" \
+    --final-val "submissions/2A202602755_DangQuocHiep/predictions/F01_seed*_val.csv" \
     --latency-p95-ms 17.8 \
     --test-csv labels/test_subset0.csv \
     --labels labels/labels.csv

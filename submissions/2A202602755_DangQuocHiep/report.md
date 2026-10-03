@@ -3,7 +3,7 @@
 
 **Học viên:** Đặng Quốc Hiệp  
 **Mã số sinh viên:** 2A202602755  
-**Thư mục bài nộp:** `submissions/DangQuocHiep_2A202602755/`  
+**Thư mục bài nộp:** `submissions/2A202602755_DangQuocHiep/`  
 **Ngày thực hiện:** Tháng 10/2026  
 
 ---
@@ -247,10 +247,10 @@ Toàn bộ 16 thí nghiệm huấn luyện đều có file ảnh biểu đồ t�
 - Python: `3.11+` | PyTorch: `2.5.1+cu124` | Timm: `1.0.30` | Pandas: `1.26.4` | Openpyxl: `3.1.5`
 - Lệnh tính điểm:
   ```bash
-  python eval.py score --pred "submissions/DangQuocHiep_2A202602755/predictions/F01_seed*_test.csv" --test-csv labels/test_subset0.csv --labels labels/labels.csv --tag F01
+  python eval.py score --pred "submissions/2A202602755_DangQuocHiep/predictions/F01_seed*_test.csv" --test-csv labels/test_subset0.csv --labels labels/labels.csv --tag F01
   ```
 - Lệnh tự chấm RUBRIC Mục I:
   ```bash
-  python eval.py grade --final "submissions/DangQuocHiep_2A202602755/predictions/F01_seed*_test.csv" --baseline "submissions/DangQuocHiep_2A202602755/predictions/T00_seed*_test.csv" --uncal "submissions/DangQuocHiep_2A202602755/predictions/F01uncal_seed*_test.csv" --final-val "submissions/DangQuocHiep_2A202602755/predictions/F01_seed*_val.csv" --latency-p95-ms 17.8 --test-csv labels/test_subset0.csv --labels labels/labels.csv
+  python eval.py grade --final "submissions/2A202602755_DangQuocHiep/predictions/F01_seed*_test.csv" --baseline "submissions/2A202602755_DangQuocHiep/predictions/T00_seed*_test.csv" --uncal "submissions/2A202602755_DangQuocHiep/predictions/F01uncal_seed*_test.csv" --final-val "submissions/2A202602755_DangQuocHiep/predictions/F01_seed*_val.csv" --latency-p95-ms 17.8 --test-csv labels/test_subset0.csv --labels labels/labels.csv
   ```
 - Kết quả chấm chính thức từ `eval.py grade`: **20 / 20 điểm tuyệt đối**.
