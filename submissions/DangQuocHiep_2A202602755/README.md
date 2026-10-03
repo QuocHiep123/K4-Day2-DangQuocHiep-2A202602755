@@ -7,6 +7,10 @@
 
 ---
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/QuocHiep123/K4-Track4-Day2-Deeplearning-Advance/blob/main/submissions/DangQuocHiep_2A202602755/code/lab_day2.ipynb)
+
+---
+
 ## 1. Cấu Trúc Thư Mục Bài Nộp
 
 Bài nộp được đóng gói hoàn chỉnh, chuẩn xác theo hợp đồng của bài Lab:
@@ -22,37 +26,8 @@ submissions/DangQuocHiep_2A202602755/
 │   ├── test_sanity.py                 # Bộ kiểm tra tính đúng đắn pipeline trước khi chạy thật
 │   └── train.py                       # Hàm train.run(Config) thống nhất với AMP, EMA, Warmup Cosine
 ├── curves/                            # 16 biểu đồ tiến trình huấn luyện (loss, F1 val theo epoch)
-│   ├── B01_resnet50.png
-│   ├── B02_resnext50.png
-│   ├── B03_convnext_tiny.png
-│   ├── B04_swin_tiny.png
-│   ├── B05_mobilenetv3.png
-│   ├── T00_baseline_resnet50.png
-│   ├── T01_scratch_convnext.png
-│   ├── T02_frozen_convnext.png
-│   ├── T03_randaugment_convnext.png
-│   ├── T04_cutmix_convnext.png
-│   ├── T05_focal_loss_convnext.png
-│   ├── T06_class_weighted_convnext.png
-│   ├── T07_combo_cutmix_focal_convnext.png
-│   ├── F01_final_seed0_convnext.png
-│   ├── F01_final_seed1_convnext.png
-│   └── F01_final_seed2_convnext.png
 ├── predictions/                       # File dự đoán xác suất chuẩn hợp đồng cho eval.py
-│   ├── T00_seed0_test.csv             # Baseline ResNet-50 Test seed 0
-│   ├── T00_seed1_test.csv             # Baseline ResNet-50 Test seed 1
-│   ├── T00_seed2_test.csv             # Baseline ResNet-50 Test seed 2
-│   ├── F01_seed0_test.csv             # Champion ConvNeXt-Tiny Test seed 0 (calibrated)
-│   ├── F01_seed1_test.csv             # Champion ConvNeXt-Tiny Test seed 1 (calibrated)
-│   ├── F01_seed2_test.csv             # Champion ConvNeXt-Tiny Test seed 2 (calibrated)
-│   ├── F01uncal_seed0_test.csv        # Chung kết chưa hiệu chuẩn để chấm I4a
-│   ├── F01uncal_seed1_test.csv
-│   ├── F01uncal_seed2_test.csv
-│   ├── F01_seed0_val.csv              # Chung kết trên Val để chấm I4b
-│   ├── F01_seed1_val.csv
-│   └── F01_seed2_val.csv
 ├── confusion_matrix_test.png          # Ma trận nhầm lẫn 9 lớp tập Test
-├── generate_submission_artifacts.py   # Script tạo lại toàn bộ dự đoán, curves và results.xlsx
 ├── results.xlsx                       # File Excel 7 sheets chuẩn GUIDE.md (đồng bộ tuyệt đối với eval.py)
 ├── report.md                          # Báo cáo thực nghiệm chuyên sâu (6-8 trang)
 └── README.md                          # Hướng dẫn tái lập này
@@ -75,7 +50,8 @@ submissions/DangQuocHiep_2A202602755/
 ## 3. Hướng Dẫn Tái Lập Kết Quả (Reproduction Steps)
 
 ### Cách 1: Chạy trực tiếp trên Google Colab / Kaggle
-1. Tải file `submissions/DangQuocHiep_2A202602755/code/lab_day2.ipynb` lên Google Colab hoặc Kaggle Notebook.
+1. Bấm vào huy hiệu **Open in Colab** ở trên hoặc mở link trực tiếp:
+   [Mở lab_day2.ipynb trên Google Colab](https://colab.research.google.com/github/QuocHiep123/K4-Track4-Day2-Deeplearning-Advance/blob/main/submissions/DangQuocHiep_2A202602755/code/lab_day2.ipynb)
 2. Bật GPU (ví dụ T4 GPU trên Colab hoặc Kaggle).
 3. Chạy lần lượt các ô lệnh từ Bước 0 đến Bước 5.
 
