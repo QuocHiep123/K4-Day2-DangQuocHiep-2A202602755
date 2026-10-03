@@ -7,7 +7,7 @@
 
 ---
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/QuocHiep123/K4-Track4-Day2-Deeplearning-Advance/blob/main/submissions/2A202602755_DangQuocHiep/code/lab_day2.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/QuocHiep123/K4-Day2-DangQuocHiep-2A202602755/blob/main/submissions/2A202602755_DangQuocHiep/code/lab_day2.ipynb)
 
 ---
 
@@ -51,7 +51,7 @@ submissions/2A202602755_DangQuocHiep/
 
 ### Cách 1: Chạy trực tiếp trên Google Colab / Kaggle
 1. Bấm vào huy hiệu **Open in Colab** ở trên hoặc mở link trực tiếp:
-   [Mở lab_day2.ipynb trên Google Colab](https://colab.research.google.com/github/QuocHiep123/K4-Track4-Day2-Deeplearning-Advance/blob/main/submissions/2A202602755_DangQuocHiep/code/lab_day2.ipynb)
+   [Mở lab_day2.ipynb trên Google Colab](https://colab.research.google.com/github/QuocHiep123/K4-Day2-DangQuocHiep-2A202602755/blob/main/submissions/2A202602755_DangQuocHiep/code/lab_day2.ipynb)
 2. Bật GPU (ví dụ T4 GPU trên Colab hoặc Kaggle).
 3. Chạy lần lượt các ô lệnh từ Bước 0 đến Bước 5.
 
